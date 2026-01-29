@@ -236,41 +236,36 @@ docker run -d --name ubuntu22 ubuntu:22.04 sleep infinity
 ```
 
 **Reference:**  
-_[Official ROS docs? StackOverflow? AI assistant? Something else?]_
+_[Official cursor docs and AI assistant]_
 
 ---
 
-### Issue 2: [Another real error or roadblock]
+### Issue 2: [Docker cannot be run within the current Ubuntu 22 container.]
 
 **Cause / diagnosis:**  
-_[Explain what you think caused it]_
+_[Docker is not installed in current Ubuntu 22 container.]_
 
 **Fix:**  
-_[The exact command/config change you used to solve it]_
+_[Install Docker on the host machine. In the container, only run the application, not Docker.]_
 
 ```bash
-[Your fix command/code here]
+sudo apt-get update
+sudo apt-get install -y ca-certificates curl
+
+sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+sudo apt-get update
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+sudo docker run hello-world
 ```
 
 **Reference:**  
-_[Official ROS docs? StackOverflow? AI assistant? Something else?]_
-
----
-
-### Issue 3 (Optional): [Title]
-
-**Cause / diagnosis:**  
-_[Explain what you think caused it]_
-
-**Fix:**  
-_[The exact command/config change you used to solve it]_
-
-```bash
-[Your fix command/code here]
-```
-
-**Reference:**  
-_[Official ROS docs? StackOverflow? AI assistant? Something else?]_
+_[CSDN and AI assistant]_
 
 ---
 
