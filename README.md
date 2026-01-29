@@ -21,7 +21,7 @@ _[Choose one:]_
 - [ ] Dual-boot Ubuntu
 - [ ] WSL2 Ubuntu
 - [ ] Ubuntu in VM (UTM/VirtualBox/VMware/Parallels)
-- [ ] Docker container
+- [✓] Docker container
 - [ ] Lab PC
 - [ ] Remote Linux server
 
