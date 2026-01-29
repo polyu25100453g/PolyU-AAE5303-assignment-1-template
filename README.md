@@ -17,13 +17,7 @@ _[Intel(R) Core(TM) i7-10875H, 16GB RAM]_
 _[Windows 10 / Ubuntu 22.04]_
 
 **Linux/ROS environment type:**  
-_[Choose one:]_
-- [ ] Dual-boot Ubuntu
-- [ ] WSL2 Ubuntu
-- [ ] Ubuntu in VM (UTM/VirtualBox/VMware/Parallels)
--✓ [ ] Docker container
-- [ ] Lab PC
-- [ ] Remote Linux server
+_[Docker container]_
 
 ---
 
