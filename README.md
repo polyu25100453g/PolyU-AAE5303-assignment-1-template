@@ -1,4 +1,4 @@
-# AAE5303 Environment Setup Report — Template for Students
+# AAE5303 Environment Setup Report
 
 > **Important:** Follow this structure exactly in your submission README.  
 > Your goal is to demonstrate **evidence, process, problem-solving, and reflection** — not only screenshots.
@@ -8,7 +8,7 @@
 ## 1. System Information
 
 **Laptop model:**  
-_[Your laptop model, e.g., Dell XPS 15, MacBook Pro M1, etc.]_
+_[ROG Zephyrus M15]_
 
 **CPU / RAM:**  
 _[e.g., Intel Core i7-11800H, 16GB RAM]_
