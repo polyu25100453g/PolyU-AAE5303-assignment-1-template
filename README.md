@@ -11,10 +11,10 @@
 _[ROG Zephyrus M15]_
 
 **CPU / RAM:**  
-_[e.g., Intel Core i7-11800H, 16GB RAM]_
+_[Intel(R) Core(TM) i7-10875H, 16GB RAM]_
 
 **Host OS:**  
-_[Windows 11 / macOS / Ubuntu 22.04]_
+_[Windows 10 / Ubuntu 22.04]_
 
 **Linux/ROS environment type:**  
 _[Choose one:]_
