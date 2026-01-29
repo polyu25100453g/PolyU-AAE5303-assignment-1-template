@@ -36,7 +36,7 @@ pip install -r requirements.txt
 ```
 
 **Any deviations from the default instructions:**  
-_[Describe any changes you made, or write "None"]_
+_[Installed git, Python 3, and venv via apt (not present by default). Installed libgl1-mesa-glx/libgl1 for OpenCV/Open3D. Installed ROS 2 Humble and colcon via apt. Installed catkin_pkg, empy, and lark in the venv so colcon build works with the venv Python. Ran smoke tests with ROS sourced before activating the venv. ]_
 
 ### 2.2 Test Results
 
