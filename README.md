@@ -136,6 +136,8 @@ python scripts/test_open3d_pointcloud.py
 _[Include screenshots showing both tests passing]_
 
 <img width="1160" height="959" alt="image" src="https://github.com/user-attachments/assets/e1c69991-8352-4047-89ab-9c4dce86cbec" />
+<img width="1163" height="960" alt="image" src="https://github.com/user-attachments/assets/cff8aa36-3b33-4ee1-b23d-8044f1d993e4" />
+
 
 
 ---
