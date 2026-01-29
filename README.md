@@ -220,16 +220,21 @@ _[Include one screenshot showing talker + listener running]_
 
 ## 4. Problems Encountered and How I Solved Them
 
-### Issue 1: [Write the exact error message or problem]
+### Issue 1: [The docker container cannot be run on the cursor terminal.]
 
 **Cause / diagnosis:**  
-_[Explain what you think caused it]_
+_[There is already a container named "ubuntu22", which has prevented access to Docker in the current environment. The owner of the sudo configuration file in the system is incorrect, and sudo itself cannot function properly.]_
 
 **Fix:**  
-_[The exact command/config change you used to solve it]_
+_[Delete the old containers in the WSL terminal and create new ones.]_
 
 ```bash
-[Your fix command/code here]
+[# 先停止并删除旧容器
+docker stop ubuntu22
+docker rm ubuntu22
+
+# 然后创建新容器
+docker run -d --name ubuntu22 ubuntu:22.04 sleep infinity]
 ```
 
 **Reference:**  
