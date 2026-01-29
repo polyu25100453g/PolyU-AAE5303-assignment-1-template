@@ -220,8 +220,6 @@ _[Include one screenshot showing talker + listener running]_
 
 ## 4. Problems Encountered and How I Solved Them
 
-> **Note:** Write 2–3 issues, even if small. This section is crucial — it demonstrates understanding and problem-solving.
-
 ### Issue 1: [Write the exact error message or problem]
 
 **Cause / diagnosis:**  
