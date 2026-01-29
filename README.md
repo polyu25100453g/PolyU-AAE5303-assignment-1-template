@@ -160,9 +160,12 @@ colcon build
 Summary: 1 package finished [x.xx s]
 ```
 
-**Your actual output:**
+**My actual output:**
 ```
-[Paste your build summary here]
+Starting >>> env_check_pkg
+Finished <<< env_check_pkg [0.37s]
+
+Summary: 1 package finished [1.10s]
 ```
 
 ### 3.2 Run talker and listener
