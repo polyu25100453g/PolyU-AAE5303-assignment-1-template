@@ -226,15 +226,13 @@ _[Include one screenshot showing talker + listener running]_
 _[There is already a container named "ubuntu22", which has prevented access to Docker in the current environment. The owner of the sudo configuration file in the system is incorrect, and sudo itself cannot function properly.]_
 
 **Fix:**  
-_[Delete the old containers in the WSL terminal and create new ones.]_
+_[Delete the old container in the WSL terminal and create a new one.]_
 
 ```bash
-[# 先停止并删除旧容器
 docker stop ubuntu22
 docker rm ubuntu22
 
-# 然后创建新容器
-docker run -d --name ubuntu22 ubuntu:22.04 sleep infinity]
+docker run -d --name ubuntu22 ubuntu:22.04 sleep infinity
 ```
 
 **Reference:**  
