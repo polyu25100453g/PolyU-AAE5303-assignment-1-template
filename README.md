@@ -23,12 +23,12 @@ _[Docker container]_
 
 ### 2.1 Steps Taken
 
-Describe briefly how you created/activated your Python environment:
+I created a .venv folder with its own Python and pip in the project root. After activation, the shell uses .venv's Python and pip. With the venv activated, I installed all project packages (numpy, scipy, matplotlib, opencv-python, open3d, etc.) inside the venv. 
 
 **Tool used:**  
-_[venv / conda / system Python]_
+_[venv]_
 
-**Key commands you ran:**
+**Key commands I ran:**
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
