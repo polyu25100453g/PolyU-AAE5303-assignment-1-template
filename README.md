@@ -184,7 +184,11 @@ ros2 run env_check_pkg talker.py
 
 **Output (3–4 lines):**
 ```
-[Paste 3-4 lines of talker output here]
+[INFO] [1769722104.254602909] [env_check_pkg_talker]: AAE5303 talker ready (publishing at 2 Hz).
+[INFO] [1769722104.754887199] [env_check_pkg_talker]: Publishing: 'AAE5303 hello #0'
+[INFO] [1769722105.254779369] [env_check_pkg_talker]: Publishing: 'AAE5303 hello #1'
+[INFO] [1769722105.754906651] [env_check_pkg_talker]: Publishing: 'AAE5303 hello #2'
+[INFO] [1769722106.254814522] [env_check_pkg_talker]: Publishing: 'AAE5303 hello #3'
 ```
 
 **Run listener:**
@@ -194,7 +198,11 @@ ros2 run env_check_pkg listener.py
 
 **Output (3–4 lines):**
 ```
-[Paste 3-4 lines of listener output here]
+[INFO] [1769723459.393141753] [env_check_pkg_listener]: AAE5303 listener awaiting messages.
+[INFO] [1769723500.845244172] [env_check_pkg_listener]: I heard: 'AAE5303 hello #0'
+[INFO] [1769723501.345250141] [env_check_pkg_listener]: I heard: 'AAE5303 hello #1'
+[INFO] [1769723501.845329638] [env_check_pkg_listener]: I heard: 'AAE5303 hello #2'
+[INFO] [1769723502.345272830] [env_check_pkg_listener]: I heard: 'AAE5303 hello #3'
 ```
 
 **Alternative (using launch file):**
@@ -205,7 +213,8 @@ ros2 launch env_check_pkg env_check.launch.py
 **Screenshot:**  
 _[Include one screenshot showing talker + listener running]_
 
-![Talker and Listener Running](path/to/your/screenshot.png)
+<img width="1084" height="959" alt="image" src="https://github.com/user-attachments/assets/474736c8-cb82-4b00-a1bb-894ce3651a6e" />
+
 
 ---
 
