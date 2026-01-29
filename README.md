@@ -240,7 +240,7 @@ _[Official cursor docs and AI assistant]_
 
 ---
 
-### Issue 2: [Docker cannot be run within the current Ubuntu 22 container.]
+### Issue 2: [Docker cannot be run within the Ubuntu 22 container.]
 
 **Cause / diagnosis:**  
 _[Docker is not installed in current Ubuntu 22 container.]_
@@ -271,44 +271,54 @@ _[CSDN and AI assistant]_
 
 ## 5. Use of Generative AI (Required)
 
-Choose one of the issues above and document how you used AI to solve it.
-
-> **Goal:** Show critical use of AI, not blind copying.
+The docker container cannot be run on the cursor terminal.
 
 ### 5.1 Exact prompt you asked
 
-**Your prompt:**
+**My prompt:**
 ```
-[Copy-paste your actual message to the AI, not a summary]
+run the container directly
 ```
 
 ### 5.2 Key helpful part of the AI's answer
 
-**AI's response (relevant part only):**
+**AI's response:**
 ```
-[Quote only the relevant part of the AI's answer]
+Currently, it is not possible to directly run the container for you in this environment because:
+Docker permissions: The current environment cannot access Docker (permission denied... docker.sock).
+Sudo issues: The owner of the sudo configuration file in the system is incorrect, and sudo itself cannot execute normally.
+Therefore, you need to execute it in your own terminal on the local machine (do not use the sandboxed terminal provided by Cursor).
+Please open a terminal on your computer (such as bash in WSL, wsl in PowerShell, etc.), and then execute:
+
+docker run -d --name ubuntu22 ubuntu:22.04 sleep infinity
+
+If prompted with insufficient permissions, try again:
+
+sudo docker run -d --name ubuntu22 ubuntu:22.04 sleep infinity
+
+After the execution is successful, use the following command to enter the container:
+
+docker exec -it ubuntu22 bash
 ```
 
-### 5.3 What you changed or ignored and why
+### 5.3 What I changed or ignored and why
 
-Explain briefly:
-- Did the AI recommend something unsafe?
-- Did you modify its solution?
-- Did you double-check with official docs?
+**My explanation:**  
+_[AI inspired me to make adjustments when containers couldn't be run in the cursor terminal, by using the WSL terminal instead, and to modify the underlying permissions. Because the process of installing WSL2 and Docker went smoothly, I almost forgot about them. AI did not provide unsafe advice. I created a new container based on its concept and further refined the AI's suggestions. The above operations are in line with the security and feasibility requirements specified in the official documents.]_
 
-**Your explanation:**  
-_[Write your analysis here]_
-
-### 5.4 Final solution you applied
-
-Show the exact command or file edit that fixed the problem:
+### 5.4 Final solution I applied
 
 ```bash
-[Your final command/code here]
+docker stop ubuntu22
+docker rm ubuntu22
+
+docker run -d --name ubuntu22 ubuntu:22.04 sleep infinity
+
+docker exec -i -t ubuntu22 bash
 ```
 
 **Why this worked:**  
-_[Brief explanation]_
+_[Deleting the old container and creating a new one has resolved the original integration issue and facilitated subsequent operations (installing Docker and connecting the cursor).]_
 
 ---
 
