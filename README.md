@@ -273,7 +273,7 @@ _[CSDN and AI assistant]_
 
 The docker container cannot be run on the cursor terminal.
 
-### 5.1 Exact prompt you asked
+### 5.1 Exact prompt I asked
 
 **My prompt:**
 ```
@@ -324,16 +324,9 @@ _[Deleting the old container and creating a new one has resolved the original in
 
 ## 6. Reflection (3–5 sentences)
 
-Short but thoughtful:
+**My reflection:**
 
-- What did you learn about configuring robotics environments?
-- What surprised you?
-- What would you do differently next time (backup, partitioning, reading error logs, asking better AI questions)?
-- How confident do you feel about debugging ROS/Python issues now?
-
-**Your reflection:**
-
-_[Write your 3-5 sentence reflection here]_
+_[]_
 
 ---
 
