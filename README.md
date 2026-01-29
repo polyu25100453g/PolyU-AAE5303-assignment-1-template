@@ -336,27 +336,13 @@ _[Write your 3-5 sentence reflection here]_
 ✅ **I confirm that I performed this setup myself and all screenshots/logs reflect my own environment.**
 
 **Name:**  
-_[Your name]_
+_[Jiazheng NIE]_
 
 **Student ID:**  
-_[Your student ID]_
+_[25100453g]_
 
 **Date:**  
-_[Date of submission]_
-
----
-
-## Submission Checklist
-
-Before submitting, ensure you have:
-
-- [ ] Filled in all system information
-- [ ] Included actual terminal outputs (not just screenshots)
-- [ ] Provided at least 2 screenshots (Python tests + ROS talker/listener)
-- [ ] Documented 2–3 real problems with solutions
-- [ ] Completed the AI usage section with exact prompts
-- [ ] Written a thoughtful reflection (3–5 sentences)
-- [ ] Signed the declaration
+_[30 January 2026]_
 
 ---
 
