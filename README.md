@@ -322,7 +322,7 @@ _[Deleting the old container and creating a new one has resolved the original in
 
 ---
 
-## 6. Reflection (3–5 sentences)
+## 6. Reflection
 
 **My reflection:**
 
