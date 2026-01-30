@@ -326,7 +326,7 @@ _[Deleting the old container and creating a new one has resolved the original in
 
 **My reflection:**
 
-_[]_
+_[I believe that when configuring the environment, one should not overly rely on a single reference material. Because for different computers, for various reasons, sometimes they will yield different results when performing the same operation. This requires the operator to have a sharp sense of observation and the ability to adapt flexibly to changing circumstances. Fortunately, the application of AI can help us enhance this ability.I was surprised by the significant role that AI played in this process. Configuring the environment used to be a very challenging task, but with the help of AI, it has become much easier.Next time when I undertake such a task, I will carefully study the thinking process of the AI to enhance my ability to identify problems, rather than simply copying the error messages. Now I am quite confident in debugging ROS/Python issues.]_
 
 ---
 
